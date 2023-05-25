@@ -1,4 +1,4 @@
-AWS 2 modules names: network and one-tier-vpc 
+AWS 2 modules: network and one-tier-vpc 
 
 1 Module "Network" - 3 tier network infrastructure with 1 puclic VPC and 2 Private. 
 To be able using for Infrastructure like show below : 
