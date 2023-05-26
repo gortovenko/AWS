@@ -45,4 +45,4 @@ Command Delete:
 1 terraform destroy - if would you like destroy infrastructure 
 
 Attention: 
-If you would be use only one from 2 modules, make sure module was commented  module or delete module from main.tf file and env. 
+If you would be use only one from 2 modules, make sure module was commented or delete module from main.tf file and env. 
