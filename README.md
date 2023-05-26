@@ -7,7 +7,7 @@ I uses Infrastructure which like show below :
 
 Note: I used VPC-peering service for vpc1, vpc2, and vpc2-vpc3.  You can add Auto Scaling Group for EKS or EC2 (it depends on your project).  Subnets set the like the list for the cldr block and the subnets setup automatically.  There are a minimum of 2 cidr blocks for subnet_vpc1/subnet_vpc2(public/private) because availability zone setup like "a" and "b" on the end of the region.  If you plan on using more than 2 subnets it is preferred to add more AZ as well.
 
-Load Balancer ( public ) is able in this module as well. 
+A public Load Balancer module is available as well.
 Main.tf - general maintance file with modules, which shows examples env which was setup, make sure about setup of  new env's ( depend form your project) and create variables.tf files in every modules and main folder. In main folder - setup secret and access keys for you AWS account, in modules folder setup variables and type of it. (necessery!!!!)
 
 Command Running: 
