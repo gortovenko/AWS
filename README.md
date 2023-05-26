@@ -1,13 +1,11 @@
 AWS 2 modules: network and one-tier-vpc 
 
 1 Module "Network" - 3 tier network infrastructure with 1 puclic VPC and 2 Private. 
-To be able use for Infrastructure like show below : 
+I uses Infrastructure which like show below : 
 
 <img width="514" alt="Screenshot 2023-05-25 at 1 11 28 PM" src="https://github.com/gortovenko/AWS/assets/59263138/4f510184-64e6-4149-b2eb-f6c379cc8e6e">
 
-Notice: I used VPC-peering service for vpc1-vpc2 and vpc2-vpc3. 
-You can add Auto Scalling Group for EKS or EC2 (depends for your project).
-Subnets set like list of cidr block you can setup more cidr block and subnets will setup automatically. Minimum 2 cidr block for subnet_vpc1/subnet_vpc2(public/private) cuz availablility zone setup like "a" and "b" on the end of region. If you would be using in the future more than 2 subnets preferred to add more AZ as well.
+Note: I used VPC-peering service for vpc1, vpc2, and vpc2-vpc3.  You can add Auto Scaling Group for EKS or EC2 (it depends on your project).  Subnets set the like the list for the cldr block and the subnets setup automatically.  There are a minimum of 2 cidr blocks for subnet_vpc1/subnet_vpc2(public/private) because availability zone setup like "a" and "b" on the end of the region.  If you plan on using more than 2 subnets it is preferred to add more AZ as well.
 
 Load Balancer ( public ) is able in this module as well. 
 Main.tf - general maintance file with modules, which shows examples env which was setup, make sure about setup of  new env's ( depend form your project) and create variables.tf files in every modules and main folder. In main folder - setup secret and access keys for you AWS account, in modules folder setup variables and type of it. (necessery!!!!)
